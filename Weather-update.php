@@ -81,7 +81,7 @@
                 $("#forecast-failure").html("Please enter a valid city").fadeIn();
             }
             else{
-                $.get("sraper.php?city="+$("#city").val(),function(data){
+                $.get("scraper.php?city="+$("#city").val(),function(data){
                     if(data=="false"){
                         $("#forecast").fadeOut();
                         $("#forecast-failure").html("Please enter a valid city").fadeIn();
